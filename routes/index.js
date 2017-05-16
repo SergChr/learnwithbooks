@@ -91,8 +91,12 @@ router.get("/books", function(req, res, next){
    }
 });
 
+router.get("/", function(req, res, next){
+   res.render("index", { title: "Welcome" });
+});
 
 router.get("/read/:url", function(req, res, next){
+    console.log("read");
     var url = decodeURIComponent(req.params.url);
     getBook(url).then(result =>{
         res.render("read", { title: "Read", login: req.session.user, url: req.params.url, book: result});

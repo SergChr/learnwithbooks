@@ -6,6 +6,13 @@ body {
     background-color: rgb(245, 245, 240);
 }
 
+.mainIndexContent {
+    margin: 1% auto;
+    background-color: #fff;
+    width: 40%;
+    padding: 1%;
+}
+
 .menulink {
     text-decoration: none;
     color: #fff;
