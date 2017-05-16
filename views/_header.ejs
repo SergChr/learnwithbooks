@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://use.fontawesome.com/73c2351e0a.js"></script>
+    
+</head>
+
+<body>
+    <script src="/js/search.js"></script>
+    <div class="header">
+
+        <div class="links">
+            
+            <a href="/books" class="menulink">Books</a>
+            <a href="/addbook" class="menulink">Add book</a>
+            <a href="/vocabulary" class="menulink">Vocabulary</a>
+        </div>
+
+        <div class="search">
+            <input type="search" id="search" autocomplete="off"> <i class="fa fa-search searchBut" aria-hidden="true"></i>
+        </div>
+
+        <div class="greet">
+           <i class="fa fa-user-circle" aria-hidden="true"></i> <%= login %>
+                <a class="logout" href="/session/destroy">Logout</a>
+        </div>
+
+    </div>

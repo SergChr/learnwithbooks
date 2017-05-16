@@ -1,0 +1,31 @@
+<% include _header %>
+    <div class="vocabularyBox">
+        <% for (var i = 0; i<words.length; i++) { %>
+
+            <div class="word" data-id="<%= words[i]["_id"] %>">
+               <!-- <div class="x">x</div> -->
+                <i class="fa fa-times x" aria-hidden="true"></i>
+                <div class="original"><%= words[i]["original"] %></div>
+                <div class="translated"><%= words[i]["translated"] %></div>
+            </div>
+
+            <% } %>
+    </div>
+
+<div class="addWordIcon">
+<i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+</div>
+<div class="addCover">
+<label class="text">Original:</label> <input type="text" size="40" id="original">
+    <br>
+<label class="text">Translated:</label> <input type="text" size="40" id="translated">
+    <br>
+    <select id="lang">
+    <option value="en">English</option>
+    <option value="de">Deutsch</option>
+    </select>
+    <br>
+<button id="add">Add</button>
+</div>
+<script src="/js/vocabulary.js"></script>
+    <% include _footer %>

@@ -1,0 +1,63 @@
+<% include _header %>
+
+<div class="box">
+    <label>
+        <label class="text">Title</label>
+    <input type="text" class="title" size="70">
+    </label>
+
+    <br>
+    
+    <label>
+        <label class="text">Description</label>
+        <textarea cols="100" rows="8" class="description"></textarea>
+    </label>
+    <br>
+    
+    <label>
+        <label class="text">Author</label>
+   <input type="text" class="author" size="70">
+    </label>
+    <br>
+    
+    <label>
+        <label class="text">Category</label>
+        <select class="category">
+            <option>Biography</option>
+            <option>Fiction</option>
+            <option>Popular science</option>
+            <option>Magazine</option>
+            <option>Other</option>
+        </select>
+    </label>
+    <br>
+    
+    <label>
+        <label class="text">Language</label>
+        <select class="lang">
+            <option>en</option>
+            <option>de</option>
+        </select>
+    </label>
+    <br>
+    
+    <label>
+        <label class="text">Book source</label>
+        <textarea class="bookSource" cols="100" rows="5"></textarea>
+    </label>
+    <br>
+    
+    <label>
+        <label class="text">Image source</label>
+        <textarea class="imageSource" cols="100" rows="5"></textarea>
+    </label>
+    <br>
+    
+    <label>
+    <button class="submit">Add book</button>
+    </label>
+
+</div>
+
+<script src="/js/addbooks.js"></script>
+<% include _footer %>

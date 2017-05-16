@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-color: rgb(245, 245, 240);
+}
+
+.menulink {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+.menulink:hover {
+    background-color: rgba(126, 16, 16, 0.3);
+}
+
+.header input {
+    padding: 5px;
+}
+
+embed {
+    width: 100%;
+}
+
+.frame {
+    margin: 1% auto;
+    width: 100%;
+}
+
+.header {
+    margin: 0;
+    background-color: rgba(14, 122, 128, 0.84);
+    color: #fff;
+}
+
+.greet,
+.links,
+.search {
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.greet {
+    padding: 15px;
+    float: right;
+    background-color: #fff;
+    color: #999;
+}
+
+.logout {
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 2px;
+    color: #888;
+}
+
+.searchBut {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.searchBut:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.booksBox {
+    margin: 5px auto;
+    text-align: center;
+    width: 100%;
+    float: right;
+    position: relative;
+}
+
+.book {
+    background-color: rgb(245, 245, 240);
+    margin: 1%;
+    display: inline-block;
+    position: relative;
+    width: 15%;
+    vertical-align: top;
+    -webkit-box-shadow: 10px 10px 18px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 18px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 18px -1px rgba(0, 0, 0, 0.75);
+}
+
+.read {
+    border: 1px solid #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    color: #fff;
+    background-color: rgba(208, 105, 20, 0.75);
+    cursor: pointer;
+}
+
+.read:hover {
+    background-color: rgba(208, 105, 20, 0.95);
+}
+
+.booksBox img {
+    width: 100%;
+}
+
+.booksBox .title {
+    font-weight: 500;
+    font-size: 1.2rem;
+    position: absolute;
+    background-color: rgba(208, 105, 20, 0.75);
+    width: 100%;
+    color: #fff;
+}
+
+.translator {
+    margin: 0;
+    width: 100%;
+    background-color: rgba(14, 122, 128, 0.8);
+    padding: 10px;
+    color: #fff;
+    position: fixed;
+    text-align: center;
+}
+
+.translator .result,
+.translator .translateBox {
+    display: block;
+    margin: 0;
+}
+
+.translator select {
+    border: 1px solid #ccc;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.translator input {
+    padding: 5px;
+}
+
+.translator button {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.translator button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.translator .result {
+    padding-top: 5px;
+}
+
+.bookinfo {
+    margin: 1% auto;
+    text-align: center;
+    display: block;
+}
+
+.bookinfo .img,
+.bookinfo .content {
+    display: inline-block;
+    padding: 0.5%;
+    vertical-align: top;
+}
+
+.bookinfo .title,
+.bookinfo .description,
+.bookinfo .author,
+.bookinfo .category {
+    display: block;
+    margin: 15px;
+    font-size: 1.2rem;
+}
+
+.bookinfo .title {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.bookinfo .content {
+    text-align: left;
+}
+
+.vocabularyBox {
+    margin: 0.5% auto;
+    text-align: center;
+    vertical-align: top;
+    width: 90%;
+}
+
+.vocabularyBox .word {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0.5%;
+    display: inline-block;
+    font-size: 1.2rem;
+    width: auto;
+    height: auto;
+    position: relative;
+    -webkit-box-shadow: 9px 9px 22px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 9px 22px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 9px 22px -8px rgba(0, 0, 0, 0.75);
+}
+
+.vocabularyBox .original,
+.vocabularyBox .translated {
+    display: block;
+}
+
+.vocabularyBox .translated {
+    background-color: rgba(88, 237, 180, 0.29);
+    padding: 3px;
+}
+
+.vocabularyBox .x {
+    position: absolute;
+    padding: 3px;
+    top: 1px;
+    right: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 1000px;
+}
+
+.vocabularyBox .x:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.addWordIcon {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #999;
+    cursor: pointer;
+}
+
+.addCover {
+    font-size: 1.3rem;
+    text-align: center;
+    position: absolute;
+    margin-left: 30px;
+    background-color: #fff;
+    bottom: 0px;
+    left: 10px;
+    padding: 10px;
+    visibility: hidden;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 9px 9px 22px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 9px 22px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 9px 22px -8px rgba(0, 0, 0, 0.75);
+}
+
+.visible {
+    visibility: visible;
+}
+
+.addCover label,
+.addCover input {
+    display: block;
+    text-align: center;
+}
+
+.addCover input {
+    padding: 1%;
+    font-size: 1.2rem;
+}
+
+.addCover select {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.addCover #add {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.addCover #add:hover {
+    background-color: rgba(88, 237, 180, 0.29);
+}
+
+.box {
+    margin: 1% auto;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.box .text {
+    display: block;
+}
+
+.ok {
+    visibility: hidden;
+}
+
+.authbox {
+    margin: 1% auto;
+    text-align: center;
+    width: 40%;
+    background-color: rgba(14, 122, 128, 0.74);
+    padding: 1%;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.75);
+}
+
+.authbox label,
+.authbox .text {
+    display: block;
+}
+
+.authbox input {
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.authbox button {
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    color: #000;
+    transition: 0.2s;
+}
+
+.authbox button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hint {
+    width: 100%;
+    margin: 0% auto;
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgba(14, 122, 128, 0.74);
+}
+
+.bars {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    color: rgba(14, 122, 128, 0.84);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+.bars:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.menubar {
+    display: none;
+    position: relative;
+    background-color: #fff;
+}
+.menubar .links a {
+    color: rgba(14, 122, 128, 0.84);
+    text-decoration: none;
+}
+
+.display {
+    display: block;
+}
+.googletranslate {
+    cursor: pointer;
+}

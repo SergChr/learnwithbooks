@@ -1,0 +1,48 @@
+<% include _header %>
+
+<div class="bookinfo">
+    <div class="img">
+<img src="<%= book["imageSource"] %>">
+    </div>
+ <div class="content">
+                <font class="title"> <%= book["title"] %> </font>
+                <font class="description"><%= book["description"] %></font>
+                 <font class="author"><b>Author:</b> <%= book["author"] %> </font>
+                <font class="category">Category: <%= book["category"] %></font>
+   </div>      
+</div>
+
+    <div class="translator">
+        
+        <div class="translateBox">
+From:<select class="from">
+  <option value="en">English</option>
+  <option value="de">Deutsch</option>
+</select> 
+        
+To: <select class="to">
+  <option value="ru">Russian</option>
+  <option value="uk">Ukrainian</option>
+  <option value="en">English</option>
+</select>
+
+<input class="text" type="text" size="60">
+<button class="translate">Translate</button>
+<button class="clear">Clear</button>
+<button class="addToVoc">Add to vocabulary</button>
+<img height="20px" class="googletranslate" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png">
+ <i class="fa fa-2x fa-check-circle ok" aria-hidden="true"></i>
+</div>      
+        
+<div class="result"></div>
+
+    </div>
+
+
+
+    <div class="frame">
+        <embed id="book" src="<%= url %>" type='application/pdf'>
+    </div>
+
+    <script src="/js/read.js"></script>
+    <% include _footer %>
